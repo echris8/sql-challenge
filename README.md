@@ -1,4 +1,7 @@
 # sql-challenge
+Please find my homework 
+
+--- 
 For creating the diagram of the employee tables relationship, I had to make a few assumptions. 
 
 The first assumption was with emp_no variable since it is on multiple tables. I assumed the employee table would only list each individual employee once, which made the emp_no of that table a primary key. Dept_emp and and dept_manager also had the emp_no variable, however, one employee could work in multiple deparmtents or be a manager part time in one and manager part time in the other, therefore I made those one to many dependents with the emp_no on dept_emp and dept_manager foreign keys. The salaries table also had emp_no, but I assumed each employee regarless of number of positions they are split between would only be paid once so the emp_no on the salaries would have a one to one with emp_no on the employee table (emp_no on the salaries as Foreign Key and emp_no on the employees as the primary key). 
